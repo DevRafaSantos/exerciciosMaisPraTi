@@ -36,9 +36,22 @@ Antes de instalar o `prompt-sync`, **certifique-se de estar no diretório corret
 
 Use o comando abaixo para navegar até a pasta desejada, em seguida instale o prompt-sync conforme passos abaixo:
 
+passo 1) 
+cd caminho/da/sua/pasta
+
+passo 2) 
+npm install prompt-sync
+
+## ⚙️ Exemplo de utilização do prompt-sync
+
 ```bash
-passo 1) cd caminho/da/sua/pasta
-passo 2) npm install prompt-sync
+//A linha abaixo deve ser inserida apenas uma única vez no projeto
+  const prompt = require("prompt-sync")()
+
+//Solicitando a informação do usuário na tela:
+  let nome = prompt("Digite seu nome: ")
+  console.log("Olá, ${nome}!")
+
 
 
 
